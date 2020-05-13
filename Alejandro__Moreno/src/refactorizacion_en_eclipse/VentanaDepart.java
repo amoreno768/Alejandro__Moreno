@@ -24,8 +24,8 @@ public class VentanaDepart extends SuperclaseDepart implements ActionListener {
 	JTextField num = new JTextField(10);
 	JTextField nombre = new JTextField(25);
 	JTextField loc = new JTextField(25);
-	
-	//Comentario para probar cambios de proyecto
+
+	// Comentario para probar cambios de proyecto
 
 	JLabel mensaje = new JLabel(" ----------------------------- ");
 	JLabel titulo = new JLabel("GESTIÓN DE DEPARTAMENTOS.");
@@ -117,13 +117,13 @@ public class VentanaDepart extends SuperclaseDepart implements ActionListener {
 		int dep, confirm;
 		existedepart = "DEPARTAMENTO EXISTE.";
 
-		altadepart(e);
+		altadepart(e); // Metodo para dar el alta departamento
 
-		consuldepart(e);
+		consuldepart(e); // Metodo para consultar departamento
 
-		borradepart(e);
+		borradepart(e); // Metodo para borrar departamento
 
-		modifdepart(e);
+		modifdepart(e); // Metodo para modificar departamento
 
 		if (e.getSource() == fin) { // SE PULSA EL BOTON salir
 			System.exit(0);
@@ -281,9 +281,6 @@ public class VentanaDepart extends SuperclaseDepart implements ActionListener {
 		return 0;
 	} // fin clase anidada
 
-	
-	
-
 	public void verporconsola() throws IOException {
 		String nom = "", loc = "";
 		int dep = 0;
@@ -320,11 +317,10 @@ public class VentanaDepart extends SuperclaseDepart implements ActionListener {
 			System.out.println(" ------------------------------------------");
 		} else // esto sólo sale la primera vez
 			System.out.println(" ---------FICHERO VACIÍIOOOO --------------------");
-		
+
 		claseAnidada ej = new claseAnidada(null);
 		ej.entrada();
 		System.out.println("Llamo a salida: " + ej.salida(10));
-
 
 	}// fin verporconsola
 
