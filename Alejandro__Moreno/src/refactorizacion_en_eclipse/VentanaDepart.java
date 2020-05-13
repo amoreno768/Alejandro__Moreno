@@ -24,6 +24,8 @@ public class VentanaDepart extends SuperclaseDepart implements ActionListener {
 	JTextField num = new JTextField(10);
 	JTextField nombre = new JTextField(25);
 	JTextField loc = new JTextField(25);
+	
+	//Comentario para probar cambios de proyecto
 
 	JLabel mensaje = new JLabel(" ----------------------------- ");
 	JLabel titulo = new JLabel("GESTIÓN DE DEPARTAMENTOS.");
